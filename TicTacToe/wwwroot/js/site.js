@@ -54,3 +54,11 @@ for (i = 0; i < cells.length; i++) {
 }
 
 setTurn();
+
+var form = document.getElementById("board");
+var cells = document.getElementsByClassName("cell");
+for (var i = 0; i < cells.Length; i++) {
+    cells[i].addEventListener(event => {
+        event.preventDefault();
+    })
+}
